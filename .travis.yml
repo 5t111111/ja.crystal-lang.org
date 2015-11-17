@@ -9,7 +9,7 @@ before_install: |
   npm install -g gitbook-cli
   bundle install --deployment --jobs=3 --retry=3
 # script: test $TRAVIS_PULL_REQUEST != "false" || test $TRAVIS_BRANCH != "gh-pages" || ./travis-build.sh
-script: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "gh-pages" && ./travis-build.sh
+script: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "gh-pages" && sh -x ./travis-build.sh
 env:
   global:
     secure: hoDVB070f1PedD4I55DBrICEoiH5B1rHe4RAgVUajHn5+XLtUbkhVw0GB3NtiVfGwVy7qOBfzVAs+5HZQ4zzNvfTLDnfftZrLze2uI8Xk0WtSfP6Hz9vt1C0PLqBewCa8lDiZY1s1/hu6bh46jqEyDjJt0uYpdFvA0dy91ZIoK2/uGPQHbb2ZJ87CWuXpT7q6u2QNiWQMrJ3gkzQ3sLwptQOaCeFN9GwaEJG9otEloIdpKdXWP05H99BrnziWqpN87+ttcAGRaS3HnazLlPRvOoDxPDepL2oWiqtP6Z2iY2QOMfdU3Bbw+MsnUqVi5AS2zjaYtvaFK8cnsOjP1XhgGXbSdFEiH+pK+fPv7Yjyg9GDcVaWTHXvA0YwRMdcEscVOQvF55QS8km8/qInWbNMluKndtvVKf7mXVT/zSXvw5Aa3bgnnjx4l8dNihA3jmWub8lGbbVpvhhrzIOqNp5f5AHIblHdKu3A/ZVfKH4LWEwBqw5M1rMLjqRUGyDdJEfjiZySPNEpsD1O8Qrey8r86hFvsVuuBxC+X7vUyO0lyGsfxSEQ7S4u1oiEQ30PjeWxGUL4/sPB9kZ9W7Vrk6o9zHqShKhZQ35hmBYLuOCnMvWIR2zklHWdAZkOVvz1DIU4F+43Brxp9cEWiwVFCcT4w++XkD0czRdx8gm1lEwBUI=
