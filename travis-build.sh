@@ -6,10 +6,10 @@ rev=$(git rev-parse --short HEAD)
 
 bundle exec rake docs docs:tidy
 
-git config --global user.email "bcardiff@manas.com.ar"
-git config --global user.name "Travis on behalf Brian J. Cardiff"
+git config --global user.email "5t111111@gmail.com"
+git config --global user.name "Travis on behalf Hirofumi Wakasugi"
 
-git remote add upstream "https://$GH_TOKEN@github.com/manastech/crystal"
+git remote add upstream "https://$GH_TOKEN@github.com/5t111111/ja.crystal-lang.org"
 git fetch upstream
 git reset upstream/gh-pages
 
